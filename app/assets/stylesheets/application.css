@@ -29,7 +29,7 @@ box-sizing: border-box;
 }
 
 .most { 
-background: url(images/ireland_portfolio.jpg) no-repeat center center fixed; 
+background: url(background/back.jpg) no-repeat center center fixed; 
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
