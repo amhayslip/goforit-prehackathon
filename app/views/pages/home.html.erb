@@ -6,11 +6,8 @@
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
 	<link rel="stylesheet" type="html/css" href="style.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script src="script.js"></script>
 </head>	
-<body class="most" data-speed="10" data-type="background">
-<!-- header	 -->
-<!-- <div class="most" data-speed="10" data-type="background"> -->
+<body class="most">
 	<header class="container">
 	  <div class="row">
 	  	<div class="col-lg-12 small top">
@@ -24,7 +21,6 @@
 	<article class="container">
 	  <div class="row">
 		<div class="col-sm-3">
-		 <!-- padding -->
 		</div>
 		<div class="col-sm-6 logo">
 			<h1 class="go">GO FOR IT</h1>
@@ -32,7 +28,6 @@
 				button
 		</div>
 		<div class="col-lg-3">
-		 <!-- padding -->
 		</div>
 	  </div>
 	</article>
@@ -41,53 +36,28 @@
 	<article class="container body">
 	  <div class="row">
 		<div class="col-sm-3 blog">
-			<!-- blog example 1 -->
+			<h2><%= @user1.goal %></h2>
+			<h3><%= @user1.name %></h3>
+			<img src="<%= @user1.picture_url %>" alt="some_text">
 		</div>
 		<div class="col-sm-3 blog">
-			<!-- blog example 2 -->
+			<h2><%= @user2.goal %></h2>
+			<h3><%= @user2.name %></h3>
+			<img src="<%= @user2.picture_url %>" alt="some_text">
 		</div>
 		<div class="col-sm-3 blog">
-			<!-- blog example 3 -->
+			<h2><%= @user3.goal %></h2>
+			<h3><%= @user3.name %></h3>
+			<img src="<%= @user3.picture_url %>" alt="some_text">
 		</div>
 		<div class="col-sm-3 blog">
-			<!-- blog example 4 -->
+			<h2><%= @user4.goal %></h2>
+			<h3><%= @user4.name %></h3>
+			<img src="<%= @user4.picture_url %>" alt="some_text">
 		</div>
 	  </div>
 	</article>
 
-	<article class="container body">
-	  <div class="row">
-		<div class="col-sm-3 blog">
-			<!-- blog example 1 -->
-		</div>
-		<div class="col-sm-3 blog">
-			<!-- blog example 2 -->
-		</div>
-		<div class="col-sm-3 blog">
-			<!-- blog example 3 -->
-		</div>
-		<div class="col-sm-3 blog">
-			<!-- blog example 4 -->
-		</div>
-	  </div>
-	</article>
-
-		<article class="container body">
-	  <div class="row">
-		<div class="col-sm-3 blog">
-			<!-- blog example 1 -->
-		</div>
-		<div class="col-sm-3 blog">
-			<!-- blog example 2 -->
-		</div>
-		<div class="col-sm-3 blog">
-			<!-- blog example 3 -->
-		</div>
-		<div class="col-sm-3 blog">
-			<!-- blog example 4 -->
-		</div>
-	  </div>
-	</article>
 
 	<!-- mission -->
 <div class="miss" data-speed="4" data-type="">
@@ -100,104 +70,16 @@
 	</article>
 </div>
 
-		<article class="container body">
-	  <div class="row">
-		<div class="col-sm-3 blog">
-			<!-- blog example 1 -->
-		</div>
-		<div class="col-sm-3 blog">
-			<!-- blog example 2 -->
-		</div>
-		<div class="col-sm-3 blog">
-			<!-- blog example 3 -->
-		</div>
-		<div class="col-sm-3 blog">
-			<!-- blog example 4 -->
-		</div>
-	  </div>
-	</article>
+	
+</div>	
 
-		<article class="container body">
-	  <div class="row">
-		<div class="col-sm-3 blog">
-			<!-- blog example 1 -->
-		</div>
-		<div class="col-sm-3 blog">
-			<!-- blog example 2 -->
-		</div>
-		<div class="col-sm-3 blog">
-			<!-- blog example 3 -->
-		</div>
-		<div class="col-sm-3 blog">
-			<!-- blog example 4 -->
-		</div>
-	  </div>
-	</article>
 
-	<div class="miss" data-speed="4" data-type="">
-	<article class="container mission">
-		<div class="row">
-			<div class="col-sm-12 misdiv">
-				<p class="mission">Some cool text about setting goals and stuff.</p>
-			</div>
-		</div>
-	</article>
-</div>
 
-		<article class="container body">
-	  <div class="row">
-		<div class="col-sm-3 blog">
-			<!-- blog example 1 -->
-		</div>
-		<div class="col-sm-3 blog">
-			<!-- blog example 2 -->
-		</div>
-		<div class="col-sm-3 blog">
-			<!-- blog example 3 -->
-		</div>
-		<div class="col-sm-3 blog">
-			<!-- blog example 4 -->
-		</div>
-	  </div>
-		</article>
-
-		<article class="container body">
-	  <div class="row">
-		<div class="col-sm-3 blog">
-			<!-- blog example 1 -->
-		</div>
-		<div class="col-sm-3 blog">
-			<!-- blog example 2 -->
-		</div>
-		<div class="col-sm-3 blog">
-			<!-- blog example 3 -->
-		</div>
-		<div class="col-sm-3 blog">
-			<!-- blog example 4 -->
-		</div>
-	  </div>
-		</article>
-
-		<article class="container body">
-	  <div class="row">
-		<div class="col-sm-3 blog">
-			<!-- blog example 1 -->
-		</div>
-		<div class="col-sm-3 blog">
-			<!-- blog example 2 -->
-		</div>
-		<div class="col-sm-3 blog">
-			<!-- blog example 3 -->
-		</div>
-		<div class="col-sm-3 blog">
-			<!-- blog example 4 -->
-		</div>
-	  </div>
-		</article>
+		
 
 
 
 
 
 </body>
-</html>	
+</html>
