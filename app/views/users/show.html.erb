@@ -1,0 +1,7 @@
+<h1> <%= @user.name %> </h1>
+
+<h2> Goal: <%= @user.goal %> </h2>
+
+<%= image_tag @user.picture_url, width: "400px" %>
+
+<h3><%= link_to 'home', root_path %></h3>

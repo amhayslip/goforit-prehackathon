@@ -25,7 +25,8 @@
 		<div class="col-sm-6 logo">
 			<h1 class="go">GO FOR IT</h1>
 			<h2 class="ex">a community to get you there<h2>
-				button
+
+				<%= link_to 'New User', new_user_path %>
 		</div>
 		<div class="col-lg-3">
 		</div>
@@ -35,26 +36,13 @@
 	<!-- featured blogs -->
 	<article class="container body">
 	  <div class="row">
+	  <% @users.each do |user| %>	
 		<div class="col-sm-3 blog">
-			<h2><%= @user1.goal %></h2>
-			<h3><%= @user1.name %></h3>
-			<img src="<%= @user1.picture_url %>" alt="some_text">
+			<h2><%= user.goal %></h2>
+			<h3><%= link_to user.name, user %></h3>
+			<%= image_tag user.picture_url, width: "100px" %>
 		</div>
-		<div class="col-sm-3 blog">
-			<h2><%= @user2.goal %></h2>
-			<h3><%= @user2.name %></h3>
-			<img src="<%= @user2.picture_url %>" alt="some_text">
-		</div>
-		<div class="col-sm-3 blog">
-			<h2><%= @user3.goal %></h2>
-			<h3><%= @user3.name %></h3>
-			<img src="<%= @user3.picture_url %>" alt="some_text">
-		</div>
-		<div class="col-sm-3 blog">
-			<h2><%= @user4.goal %></h2>
-			<h3><%= @user4.name %></h3>
-			<img src="<%= @user4.picture_url %>" alt="some_text">
-		</div>
+	   <% end %>
 	  </div>
 	</article>
 

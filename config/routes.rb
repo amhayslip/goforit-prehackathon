@@ -1,6 +1,14 @@
 Goforit::Application.routes.draw do
 
-  root 'pages#home'
+  root 'users#index'
+  get '/users/' => 'users#index'
+  get '/users/new' => 'users#new', as: 'new_user'
+  get '/users/:id' => 'users#show', as: 'user'
+  get '/users/edit' => 'users#edit', as: 'edit_video'
+  post '/users' => 'users#create'
+  put '/users' => 'users#update'
+  patch '/users/:id' => 'videos#update'
+  delet '/'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
